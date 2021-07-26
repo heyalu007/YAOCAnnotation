@@ -14,7 +14,18 @@
 		7FFC981126AE42C3006780E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FFC981026AE42C3006780E9 /* Assets.xcassets */; };
 		7FFC981426AE42C3006780E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FFC981226AE42C3006780E9 /* LaunchScreen.storyboard */; };
 		7FFC981726AE42C3006780E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFC981626AE42C3006780E9 /* main.m */; };
+		7FFC982526AE42F4006780E9 /* YAOCAnnotationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFC982426AE42F4006780E9 /* YAOCAnnotationDemoTests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7FFC982726AE42F4006780E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FFC97F926AE42C2006780E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FFC980026AE42C2006780E9;
+			remoteInfo = YAOCAnnotationDemo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7FFC980126AE42C2006780E9 /* YAOCAnnotationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YAOCAnnotationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,10 +40,20 @@
 		7FFC981326AE42C3006780E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FFC981526AE42C3006780E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FFC981626AE42C3006780E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7FFC982226AE42F4006780E9 /* YAOCAnnotationDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YAOCAnnotationDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FFC982426AE42F4006780E9 /* YAOCAnnotationDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YAOCAnnotationDemoTests.m; sourceTree = "<group>"; };
+		7FFC982626AE42F4006780E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7FFC97FE26AE42C2006780E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FFC981F26AE42F4006780E9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				7FFC980326AE42C2006780E9 /* YAOCAnnotationDemo */,
+				7FFC982326AE42F4006780E9 /* YAOCAnnotationDemoTests */,
 				7FFC980226AE42C2006780E9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				7FFC980126AE42C2006780E9 /* YAOCAnnotationDemo.app */,
+				7FFC982226AE42F4006780E9 /* YAOCAnnotationDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +99,15 @@
 			path = YAOCAnnotationDemo;
 			sourceTree = "<group>";
 		};
+		7FFC982326AE42F4006780E9 /* YAOCAnnotationDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				7FFC982426AE42F4006780E9 /* YAOCAnnotationDemoTests.m */,
+				7FFC982626AE42F4006780E9 /* Info.plist */,
+			);
+			path = YAOCAnnotationDemoTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -96,6 +128,24 @@
 			productReference = 7FFC980126AE42C2006780E9 /* YAOCAnnotationDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7FFC982126AE42F4006780E9 /* YAOCAnnotationDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FFC982926AE42F4006780E9 /* Build configuration list for PBXNativeTarget "YAOCAnnotationDemoTests" */;
+			buildPhases = (
+				7FFC981E26AE42F4006780E9 /* Sources */,
+				7FFC981F26AE42F4006780E9 /* Frameworks */,
+				7FFC982026AE42F4006780E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FFC982826AE42F4006780E9 /* PBXTargetDependency */,
+			);
+			name = YAOCAnnotationDemoTests;
+			productName = YAOCAnnotationDemoTests;
+			productReference = 7FFC982226AE42F4006780E9 /* YAOCAnnotationDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -106,6 +156,10 @@
 				TargetAttributes = {
 					7FFC980026AE42C2006780E9 = {
 						CreatedOnToolsVersion = 12.4;
+					};
+					7FFC982126AE42F4006780E9 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 7FFC980026AE42C2006780E9;
 					};
 				};
 			};
@@ -123,6 +177,7 @@
 			projectRoot = "";
 			targets = (
 				7FFC980026AE42C2006780E9 /* YAOCAnnotationDemo */,
+				7FFC982126AE42F4006780E9 /* YAOCAnnotationDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +190,13 @@
 				7FFC981426AE42C3006780E9 /* LaunchScreen.storyboard in Resources */,
 				7FFC981126AE42C3006780E9 /* Assets.xcassets in Resources */,
 				7FFC980F26AE42C2006780E9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FFC982026AE42F4006780E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +214,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7FFC981E26AE42F4006780E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FFC982526AE42F4006780E9 /* YAOCAnnotationDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7FFC982826AE42F4006780E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FFC980026AE42C2006780E9 /* YAOCAnnotationDemo */;
+			targetProxy = 7FFC982726AE42F4006780E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7FFC980D26AE42C2006780E9 /* Main.storyboard */ = {
@@ -322,6 +400,44 @@
 			};
 			name = Release;
 		};
+		7FFC982A26AE42F4006780E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9P3Y53255R;
+				INFOPLIST_FILE = YAOCAnnotationDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.heyalu.test.YAOCAnnotationDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YAOCAnnotationDemo.app/YAOCAnnotationDemo";
+			};
+			name = Debug;
+		};
+		7FFC982B26AE42F4006780E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9P3Y53255R;
+				INFOPLIST_FILE = YAOCAnnotationDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.heyalu.test.YAOCAnnotationDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YAOCAnnotationDemo.app/YAOCAnnotationDemo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -339,6 +455,15 @@
 			buildConfigurations = (
 				7FFC981B26AE42C3006780E9 /* Debug */,
 				7FFC981C26AE42C3006780E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FFC982926AE42F4006780E9 /* Build configuration list for PBXNativeTarget "YAOCAnnotationDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FFC982A26AE42F4006780E9 /* Debug */,
+				7FFC982B26AE42F4006780E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
