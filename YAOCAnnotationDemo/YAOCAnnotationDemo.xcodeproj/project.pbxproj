@@ -15,6 +15,7 @@
 		7FFC981426AE42C3006780E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FFC981226AE42C3006780E9 /* LaunchScreen.storyboard */; };
 		7FFC981726AE42C3006780E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFC981626AE42C3006780E9 /* main.m */; };
 		7FFC982526AE42F4006780E9 /* YAOCAnnotationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFC982426AE42F4006780E9 /* YAOCAnnotationDemoTests.m */; };
+		7FFC983026AE43A4006780E9 /* YAAnnotationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFC982F26AE43A4006780E9 /* YAAnnotationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		7FFC982226AE42F4006780E9 /* YAOCAnnotationDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YAOCAnnotationDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FFC982426AE42F4006780E9 /* YAOCAnnotationDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YAOCAnnotationDemoTests.m; sourceTree = "<group>"; };
 		7FFC982626AE42F4006780E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FFC982E26AE43A4006780E9 /* YAAnnotationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YAAnnotationManager.h; sourceTree = "<group>"; };
+		7FFC982F26AE43A4006780E9 /* YAAnnotationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YAAnnotationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				7FFC982426AE42F4006780E9 /* YAOCAnnotationDemoTests.m */,
+				7FFC982E26AE43A4006780E9 /* YAAnnotationManager.h */,
+				7FFC982F26AE43A4006780E9 /* YAAnnotationManager.m */,
 				7FFC982626AE42F4006780E9 /* Info.plist */,
 			);
 			path = YAOCAnnotationDemoTests;
@@ -218,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FFC983026AE43A4006780E9 /* YAAnnotationManager.m in Sources */,
 				7FFC982526AE42F4006780E9 /* YAOCAnnotationDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
